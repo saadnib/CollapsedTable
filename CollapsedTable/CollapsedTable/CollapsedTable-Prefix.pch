@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'CollapsedTable' target in the 'CollapsedTable' project
+//
+
+#import <Availability.h>
+
+#define UIColorFromRedGreenBlue(nRed,nGreen,nBlue) \
+[UIColor colorWithRed:(nRed)/255.0 \
+green:(nGreen)/255.0 \
+blue:(nBlue)/255.0 \
+alpha:1.0]
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
